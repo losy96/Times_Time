@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <style>
+        body {margin: 0;padding: 0;}
+    </style>
+    <style>
+        .logo{width:100%;background:#fff9eb;height:50px;width:250px;padding-top:20px;padding-bottom:20px}
+    </style>
+    <style>
+        .out_dot_line{width:100%;background:#fff9eb;padding-left:10px;padding-right:10px}
+    </style>
+    <style>
+        .div_plus_min_button{background:#fff9eb;color: #8b7979;height:30px;width:240px;line-height:10px;padding-left:10px;padding-top:8px;font-weight:bold;font-size:16px}
+    </style>
+    <style>
+        .plus_min_button{background:#fff9eb;border:none;outline:none;cursor:pointer; display:inline;}
+    </style>
+    <style>
+        .top_hidden{background:#fff9eb;padding-left:25px;font-size:14px;color:#8b7979}
+    </style>
+    <style>
+        .hidden_dot_line{width:100%;background:#fff9eb;padding-left:25px;padding-right:10px}
+    </style>
+	<style>
+        .extension_description{background:#fff9eb;color:#8b7979;height:30px;width:240px;line-height:10px;padding-left:10px;padding-top:15px;font-size:4px}
+    </style>
+	<style>
+        .delete_or_not{background:#fff9eb;border:none;outline:none;cursor:pointer; display:inline;}
+    </style>
+
+    <style>
+        a:link {color: #8b7979} /* 未访问的链接 */
+        a:active{ color:#8b7979; /*鼠标点击链接时颜色*/}
+        a:visited {color:#8b7979;}
+        a{ text-decoration:none}
+        
+    </style>
+    
+    <head>
+	
+    </head>
+    <body>
+        <div id = "logo" class = "logo" align="center">
+        <image src = "icon.png" height = "50px" width = "50px"/>
+        </div>
+        <div class = "out_dot_line">
+            <div  style="border-bottom:1px dashed #8b7979;">
+            </div>
+        </div>
+        <div  class = "div_plus_min_button">
+            <button id = "display" class = "plus_min_button" type="button">
+                <image  id = "top_button" src = "image/plus.png" style="width:20px;height:20px;" />
+            </button>
+            <div id = "button_description" style = " display:inline ;position:relative;bottom:4px;font-size:4px">
+              十个最近访问最多的站点 
+            </div>
+        </div>
+        
+        <div id = "dot_line_hidden1" style = "display:none" class = "hidden_dot_line">
+            <div  style="border-bottom:1px dashed #8b7979;">
+            </div>
+        </div>
+        
+        <div id = "top" class = "top_hidden" style="position:relative;height:250px;display:none">
+
+        </div>
+        
+        <div class = "out_dot_line">
+            <div  style="border-bottom:1px dashed #8b7979;">
+            </div>
+        </div>
+        
+        <div  class = "div_plus_min_button">
+			<button id = "delete" class = "plus_min_button" type="button">
+				<image  id = "delete_button" src = "image/delete.png" style="width:20px;height:20px;" />
+			</button>
+			<div id = "button_description" style = " display:inline ;position:relative;bottom:4px;font-size:4px">
+              删除所有记录
+            </div>
+        </div>
+		<div id = "dot_line_hidden2" style = "display:none" class = "hidden_dot_line">
+            <div  style="border-bottom:1px dashed #8b7979;">
+            </div>
+        </div>
+        
+        <div id = "hidden_button"  style=" height:90px;background:#fff9eb;display:none">
+			<div id = "delete_prompt" align="center" style = "position:relative;top:20px;bottom:10px;font-size:4px">
+				是否确认删除记录？
+			</div>
+			<div align="center" style = "position:relative;top:30px;bottom:10px;font-size:4px">
+				<button id = "yes_delete" class = "delete_or_not" type="button">
+					<image  id = "delete_button" src = "image/yes.png" style="width:20px;height:20px;" />
+				</button>
+				<button id = "no_delete" class = "delete_or_not" type="button">
+					<image  id = "delete_button" src = "image/no.png" style="width:20px;height:20px;" />
+				</button>
+			</div>
+        </div>
+		
+		
+        <div class = "out_dot_line">
+            <div  style="border-bottom:1px dashed #8b7979;">
+            </div>
+        </div>
+
+
+
+		<div id = "extension_description" class = "extension_description">
+			<div style = "opacity:0.8;">
+                <a href="dataAnalyse/dataAnalyse.html" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用于记录访问最多的十个网站</a>
+			</div>
+		</div>
+        <script src="popup.js"></script>    
+
+    </body>
+</html>
